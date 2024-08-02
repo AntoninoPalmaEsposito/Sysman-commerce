@@ -41,7 +41,7 @@ export default {
     <!-- Hero section MOBILE -->
     <div class="flex md:hidden bg-[rgb(38,121,114)] text-white pb-[10vw] flex-col  rounded-b-[4vw] mt-[-4vw] px-[4vw]">
 
-        <h1 class="pt-[12vw] font-bold text-[8vw] text-center leading-[9vw] ">Potenzia il Tuo PC con i Migliori
+        <h1 class="pt-[12vw] font-bold text-[6vw] text-center leading-[6vw] ">Potenzia il Tuo PC con i Migliori
             Componenti Hardware</h1>
 
         <p class="pt-[3vw] text-[3.5vw] text-center ">Benvenuto su Sysman-Commerce, il tuo punto di riferimento per
@@ -105,14 +105,18 @@ export default {
                 :key="index"
                 class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-[1px] border-gray-100 hover:border-black duration-700">
 
+                <!-- img -->
                 <div class="h-[50vw] border-b-[0.5vw] w-[70vw] flex justify-center items-center">
                     <img :src="product.img" alt="" class="h-[40vw] my-auto">
                 </div>
 
-
-
+                <!-- title -->
                 <h2 class="font-semibold pt-[5vw] pb-[3vw] text-[3.5vw]">{{ product.title }}</h2>
+
+                <!-- description -->
                 <p class="pb-[3vw] text-[3vw]">{{ product.description }}</p>
+
+                <!-- price -->
                 <p class="w-[100%]"><span class="font-semibold">Prezzo: </span>{{ product.price }} €</p>
 
             </RouterLink>
@@ -129,10 +133,10 @@ export default {
 
 
 
-         <!-- Button tutti i prodotti MOBILE-->
-         <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[7vw]">
+        <!-- Button tutti i prodotti MOBILE-->
+        <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[7vw]">
             <button
-                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[2.5vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
+                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[3vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
 
