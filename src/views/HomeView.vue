@@ -39,9 +39,9 @@ export default {
 
 
     <!-- Hero section MOBILE -->
-    <div class="flex md:hidden bg-[rgb(38,121,114)] text-white pb-[10vw] flex-col  rounded-b-[4vw] mt-[-4vw] px-[3vw]">
+    <div class="flex md:hidden bg-[rgb(38,121,114)] text-white pb-[10vw] flex-col  rounded-b-[4vw] mt-[-4vw] px-[4vw]">
 
-        <h1 class="pt-[12vw] font-bold text-[6vw] text-center leading-[7vw] ">Potenzia il Tuo PC con i Migliori
+        <h1 class="pt-[12vw] font-bold text-[8vw] text-center leading-[9vw] ">Potenzia il Tuo PC con i Migliori
             Componenti Hardware</h1>
 
         <p class="pt-[3vw] text-[3.5vw] text-center ">Benvenuto su Sysman-Commerce, il tuo punto di riferimento per
@@ -53,12 +53,10 @@ export default {
 
 
 
-    <!-- Section last product -->
-    <section class="px-[60px] py-[60px]">
+    <!-- last product DEKSTOP -->
+    <section class="hidden md:block px-[60px] py-[60px]">
 
         <h1 class="text-[30px] font-bold text-[rgb(73,73,73)] pb-[30px]">Ultimi prodotti</h1>
-
-
 
         <!-- Grid Product -->
         <div class="grid grid-cols-3">
@@ -77,14 +75,9 @@ export default {
                 <p class="pb-[10px] text-[15px]">{{ product.description }}</p>
                 <p class="w-[100%]"><span class="font-semibold">Prezzo: </span>{{ product.price }} €</p>
 
-
-
-
-
             </RouterLink>
 
         </div>
-
 
 
         <!-- Button tutti i prodotti -->
@@ -95,6 +88,53 @@ export default {
                 i prodotti</button>
         </RouterLink>
 
+
+    </section>
+
+
+
+    <!-- last product MOBILE -->
+    <section class="px-[4vw] py-[8vw]">
+
+        <h1 class="text-[4vw] font-bold text-[rgb(73,73,73)] pb-[3vw]">Ultimi prodotti</h1>
+
+        <!-- Grid Product -->
+        <div class="grid grid-cols-1">
+
+            <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products.slice(0, 3)"
+                :key="index"
+                class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-[1px] border-gray-100 hover:border-black duration-700">
+
+                <div class="h-[50vw] border-b-[0.5vw] w-[70vw] flex justify-center items-center">
+                    <img :src="product.img" alt="" class="h-[40vw] my-auto">
+                </div>
+
+
+
+                <h2 class="font-semibold pt-[5vw] pb-[3vw] text-[3.5vw]">{{ product.title }}</h2>
+                <p class="pb-[3vw] text-[3vw]">{{ product.description }}</p>
+                <p class="w-[100%]"><span class="font-semibold">Prezzo: </span>{{ product.price }} €</p>
+
+            </RouterLink>
+
+        </div>
+
+
+        <!-- Button tutti i prodotti DEKSTOP-->
+        <RouterLink to="/products" class="hidden md:flex justify-center items-center pt-[60px]">
+            <button
+                class=" px-[20px]  py-[15px] bg-blue-300 rounded-xl text-white font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
+                i prodotti</button>
+        </RouterLink>
+
+
+
+         <!-- Button tutti i prodotti MOBILE-->
+         <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[7vw]">
+            <button
+                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[2.5vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
+                i prodotti</button>
+        </RouterLink>
 
 
     </section>
