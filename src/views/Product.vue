@@ -62,7 +62,7 @@ export default {
 
 
     <!-- goBack MOBILE-->
-    <div class="flex md:hidden items-center px-[4vw] py-[8vw]">
+    <div class="flex md:hidden items-center px-[4vw] pt-[8vw]">
 
         <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
                 class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
@@ -163,7 +163,7 @@ export default {
 
 
         <!-- img / edit container -->
-        <div class="flex flex-col  justify-between items-center pb-[5vw]">
+        <div class="flex flex-col  justify-between items-center pb-[10vw]">
 
             <!-- img product -->
             <img :src="product.img" alt="" class="h-[45vw] mb-[7vw] ">
@@ -196,42 +196,42 @@ export default {
 
 
             <!-- title -->
-            <div class="flex pb-[15px]">
+            <div class="flex pb-[2.5vw]">
                 <textarea cols="60" rows="1" type="text" v-model="product.title" id="title" name="title"
                     placeholder="Inserisci il titolo" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none font-bold"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none font-bold text-[3.7vw]"></textarea>
             </div>
 
             <!-- description -->
-            <div class="flex pb-[10px]">
+            <div class="flex pb-[2.5vw]">
                 <textarea cols="60" rows="4" type="text" v-model="product.description" id="description"
                     name="descrizione" placeholder="Inserisci la descrizione" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none text-[3.2vw]"></textarea>
             </div>
 
             <!-- price -->
-            <div class="flex pb-[10px] font-semibold">
-                <span>€</span>
+            <div class="flex pb-[2.5vw] font-semibold">
+                <span class="text-[3.5vw]">€</span>
                 <input type="number" v-model="product.price" id="price" name="price" placeholder="Inserisci il prezzo"
-                    :disabled="edit" class="appearance-none border-none bg-transparent focus:outline-none">
+                    :disabled="edit" class="appearance-none border-none bg-transparent focus:outline-none text-[3.5vw]">
             </div>
 
-            <div class="h-[2px] bg-gray-200 w-[82%] mb-[10px]"></div>
+            <div class="h-[2px] bg-gray-200 w-[82vw] mb-[2.5vw]"></div>
 
 
             <!-- img url -->
-            <div class="flex flex-col pb-[65px]">
-                <label for="img" class="w-[120px] text-[15px] ">Img URL:</label>
+            <div class="flex flex-col pb-[7vw]">
+                <label for="img" class=" text-[3vw] ">IMG URL:</label>
                 <textarea cols="60" rows="2" type="text" v-model="product.img" id="img" name="img"
                     placeholder="Inserisci url immagine" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none text-[12px]"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none text-[2.5vw]"></textarea>
             </div>
 
             <!-- button salva -->
-            <div class="flex justify-center items-center scale-90 ml-[-90px]">
+            <div class="flex justify-center items-center pb-[20vw]">
                 <button type="submit" value="Invia"
                     :class="{ 'opacity-40': edit, 'hover:scale-125': !edit, 'duration-300': !edit, 'opacity-100': !edit }"
-                    class="bg-blue-400 text-white font-bold text-[25px] px-[20px] py-[5px] rounded-xl">Salva!</button>
+                    class="bg-blue-400 text-white font-bold text-[4vw] px-[4vw] py-[1.2vw] rounded-xl">Salva!</button>
             </div>
 
 
