@@ -94,7 +94,7 @@ export default {
 
 
     <!-- last product MOBILE -->
-    <section class="px-[4vw] py-[8vw]">
+    <section class="block md:hidden px-[4vw] py-[8vw]">
 
         <h1 class="text-[4vw] font-bold text-[rgb(73,73,73)] pb-[3vw]">Ultimi prodotti</h1>
 

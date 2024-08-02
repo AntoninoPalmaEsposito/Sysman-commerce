@@ -57,7 +57,7 @@ export default {
                     class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[5vw] text-[rgb(73,73,73)] font-bold mx-auto pr-[8vw] pb-[5vw] pt-[8vw]">Tutti i
+            <h1 class="text-center text-[5vw] text-[rgb(73,73,73)] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">Tutti i
                 prodotti</h1>
 
         </div>
