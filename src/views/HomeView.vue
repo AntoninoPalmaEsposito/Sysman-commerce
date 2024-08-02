@@ -136,7 +136,7 @@ export default {
         <!-- Button tutti i prodotti MOBILE-->
         <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[10vw]">
             <button
-                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[4.5vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
+                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[4vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
 
