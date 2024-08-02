@@ -127,7 +127,7 @@ export default {
 
 
     <!-- form MOBILE -->
-    <section class="flex md:hidden justify-center items-center">
+    <section class="flex md:hidden justify-center items-center pb-[20vw]">
 
         <!-- form -->
         <form @submit.prevent="submitForm" class="">
@@ -171,9 +171,9 @@ export default {
 
 
             <!-- button -->
-            <div class="flex justify-center items-center scale-90 pt-[50px]">
+            <div class="flex justify-center items-center pt-[8vw]">
                 <button type="submit" value="Invia"
-                    class="bg-blue-400 text-white font-bold text-[25px] hover:scale-125 duration-500 px-[20px] py-[5px] rounded-xl">Salva!</button>
+                    class="bg-blue-400 text-white font-bold text-[4.5vw] hover:scale-125 duration-500 px-[4vw] py-[1vw] rounded-xl">Salva!</button>
             </div>
 
 
