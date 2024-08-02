@@ -220,7 +220,7 @@ export default {
 
 
             <!-- img url -->
-            <div class="flex flex-col pb-[7vw]">
+            <div class="flex flex-col pb-[10vw]">
                 <label for="img" class=" text-[3vw] ">IMG URL:</label>
                 <textarea cols="60" rows="2" type="text" v-model="product.img" id="img" name="img"
                     placeholder="Inserisci url immagine" :disabled="edit"
@@ -231,7 +231,7 @@ export default {
             <div class="flex justify-center items-center pb-[20vw]">
                 <button type="submit" value="Invia"
                     :class="{ 'opacity-40': edit, 'hover:scale-125': !edit, 'duration-300': !edit, 'opacity-100': !edit }"
-                    class="bg-blue-400 text-white font-bold text-[4vw] px-[4vw] py-[1.2vw] rounded-xl">Salva!</button>
+                    class="bg-blue-400 text-white font-bold text-[5.5vw] px-[4vw] py-[1.2vw] rounded-xl">Salva!</button>
             </div>
 
 

@@ -94,7 +94,7 @@ export default {
 
 
     <!-- last product MOBILE -->
-    <section class="block md:hidden px-[4vw] py-[8vw]">
+    <section class="block md:hidden px-[4vw] pt-[8vw] pb-[20vw]">
 
         <h1 class="text-[4vw] font-bold text-[rgb(73,73,73)] pb-[3vw]">Ultimi prodotti</h1>
 
@@ -134,9 +134,9 @@ export default {
 
 
         <!-- Button tutti i prodotti MOBILE-->
-        <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[7vw]">
+        <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[10vw]">
             <button
-                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[3vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
+                class=" px-[3.5vw]  py-[3vw] bg-blue-300 rounded-xl text-white text-[4.5vw] font-bold hover:bg-blue-500 hover:scale-125 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
 
