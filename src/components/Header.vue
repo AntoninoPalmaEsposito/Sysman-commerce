@@ -62,7 +62,7 @@ export default {
 
     <!-- MOBILE -->
     <header
-        class="flex md:hidden h-[13vw] text-[rgb(65,65,65)] bg-[rgb(213,234,238)] justify-between items-center px-[3vw] shadow-md relative z-10 rounded-b-[4vw] duration-300">
+        class="flex md:hidden h-[13vw] text-[rgb(65,65,65)] bg-[rgb(211,231,235)] justify-between items-center px-[3vw] shadow-md relative z-10 rounded-b-[4vw] duration-300">
 
         <!-- Logo -->
         <RouterLink to="/" class="text-[4.5vw] text-[rgb(255,122,81)] font-extrabold mt-[-1vw]">Sysman-C</RouterLink>

@@ -28,7 +28,7 @@ export default {
 
         submitForm() {
             this.edit = true
-            this.$router.push('/products')
+            this.$router.go(-1)
         },
 
         addToCart(product) {
