@@ -27,8 +27,13 @@ export default {
         },
 
         submitForm() {
+            
+            if(this.edit) {
+            } else {
+                this.$router.go(-1)
+            }
+
             this.edit = true
-            this.$router.go(-1)
         },
 
         addToCart(product) {
@@ -231,7 +236,7 @@ export default {
             <div class="flex justify-center items-center pb-[20vw]">
                 <button type="submit" value="Invia"
                     :class="{ 'opacity-40': edit, 'hover:scale-125': !edit, 'duration-300': !edit, 'opacity-100': !edit }"
-                    class="bg-blue-400 text-white font-bold text-[5.5vw] px-[4vw] py-[1.2vw] rounded-xl">Salva!</button>
+                    class="text-blue-400 border-2 border-blue-400 font-bold text-[4vw] px-[3.5vw] py-[3vw] rounded-xl">Salva!</button>
             </div>
 
 
