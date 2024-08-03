@@ -40,7 +40,12 @@ export default {
 
 
 
+
+
+
 <template>
+
+
 
     <section class="px-[4vw] md:px-[3vw]">
 
@@ -81,21 +86,18 @@ export default {
             <!-- product container -->
             <div class="grid grid-cols-1">
 
+
                 <div v-for="(item, index) in cart" :key="item.id">
 
-
                     <div class="flex items-center border-r-2 border-b-2 border-gray-200  w-[50%]">
-
 
                         <!-- img -->
                         <div class="w-[12vw] border-x-2 p-[1vw] flex justify-center items-center">
                             <img :src="item.img" alt="" class="h-[5vw] my-auto">
                         </div>
 
-
                         <!-- description container -->
                         <div class="flex justify-between items-center w-[100%] px-[1.5vw]">
-
 
                             <div class="flex flex-col justify-center text-[1vw]">
                                 <!-- title -->
@@ -109,13 +111,12 @@ export default {
                             <button @click="removeCart(index); priceCalculator()"
                                 class="px-[1vw] py-[0.6vw] bg-red-500 rounded-full text-white font-bold text-[0.9vw] mr-[1vw] hover:scale-125 duration-500">X</button>
 
-
                         </div>
+
                     </div>
 
-
-
                 </div>
+
 
             </div>
 
@@ -124,7 +125,8 @@ export default {
             <!-- total price -->
             <div class="fixed right-[18vw] top-[25vw]">
 
-                <div class="text-[1vw] text-center font-semibold ">Prodotti:  {{ cartCont }}</div>
+
+                <div class="text-[1vw] text-center font-semibold ">Prodotti: {{ cartCont }}</div>
 
                 <div class="flex pb-[1.3vw]">
                     <button class="text-[1.5vw] font-bold  ">Prezzo totale:</button>
@@ -139,6 +141,7 @@ export default {
 
             </div>
 
+
         </div>
 
 
@@ -149,21 +152,18 @@ export default {
             <!-- product container -->
             <div class="grid grid-cols-1">
 
+
                 <div v-for="(item, index) in cart" :key="item.id">
 
-
                     <div class="flex items-center border-r-2 border-b-2 border-gray-200  ">
-
 
                         <!-- img -->
                         <div class="w-[40vw] border-x-2 p-[3vw] flex justify-center items-center">
                             <img :src="item.img" alt="" class="h-[14vw] my-auto">
                         </div>
 
-
                         <!-- description container -->
                         <div class="flex justify-between w-[100%] px-[3.5vw] ">
-
 
                             <div class="flex flex-col justify-between ">
 
@@ -184,41 +184,36 @@ export default {
 
                             </div>
 
-
-
-
                         </div>
+
                     </div>
 
-
-
                 </div>
+
 
             </div>
 
 
-          
-                <div class="text-[4vw] font-semibold pt-[3vw]">Prodotti:  {{ cartCont }}</div>
-               
-            
+
+            <!-- total product -->
+            <div class="text-[4vw] font-semibold pt-[3vw]">Prodotti: {{ cartCont }}</div>
 
 
 
             <!-- total price MOBILE-->
-
             <div class="flex justify-center pb-[5vw] pt-[8vw]">
                 <h2 class="text-[6vw] font-bold  text-center ">Prezzo totale:</h2>
                 <p class="text-[6vw] font-semibold pl-[2vw] ">{{ totalPrice }}€ </p>
             </div>
 
             <div class="flex justify-center items-center pb-[20vw]">
-                <button class="text-[4vw] px-[3.5vw] py-[3vw] rounded-xl text-blue-500 border-2 border-blue-500 font-bold">Acquista!</button>
+                <button
+                    class="text-[4vw] px-[3.5vw] py-[3vw] rounded-xl text-blue-500 border-2 border-blue-500 font-bold">Acquista!</button>
             </div>
 
 
 
         </div>
-
 
 
 

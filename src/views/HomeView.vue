@@ -21,11 +21,14 @@ export default {
 
 
 
+
 <template>
 
+
+
     <!-- Hero section DEKSTOP -->
-    <div
-        class="hidden md:flex bg-[rgb(211,231,235)] text-black pb-[6vw] flex-col  rounded-b-3xl mt-[-20px] px-[3vw]">
+    <div class="hidden md:flex bg-[rgb(211,231,235)] text-black pb-[6vw] flex-col  rounded-b-3xl mt-[-20px] px-[3vw]">
+
 
         <h1 class="pt-[6vw] font-bold text-[3vw] text-center leading-[3.5vw] ">Potenzia il Tuo PC <br> con i Migliori
             Componenti Hardware</h1>
@@ -35,13 +38,14 @@ export default {
             semplice appassionato di tecnologia, qui troverai tutto ciò di cui hai bisogno per costruire, aggiornare e
             ottimizzare il tuo computer.</p>
 
+
     </div>
 
 
 
     <!-- Hero section MOBILE -->
-    <div
-        class="flex md:hidden  bg-[rgb(211,231,235)] text-black pb-[10vw] flex-col items-center rounded-b-[4vw] mt-[-4vw] px-[4vw]">
+    <div class="flex md:hidden  bg-[rgb(211,231,235)] text-black pb-[10vw] flex-col items-center rounded-b-[4vw] mt-[-4vw] px-[4vw]">
+
 
         <h1 class="pt-[12vw] font-bold text-[6vw] text-center leading-[6vw] w-[67vw]  ">Potenzia il Tuo PC con i
             Migliori
@@ -52,6 +56,7 @@ export default {
             semplice appassionato di tecnologia, qui troverai tutto ciò di cui hai bisogno per costruire, aggiornare e
             ottimizzare il tuo computer.</p>
 
+
     </div>
 
 
@@ -60,6 +65,7 @@ export default {
     <section class="hidden md:block px-[3vw] pt-[5vw] pb-[10vw]">
 
         <h1 class="text-[1.8vw] font-bold pb-[1.8vw]">Ultimi prodotti</h1>
+
 
         <!-- Grid Product -->
         <div class="grid grid-cols-3">
@@ -87,14 +93,13 @@ export default {
         </div>
 
 
-        <!-- Button tutti i prodotti Dekstop-->
 
+        <!-- Button tutti i prodotti Dekstop-->
         <RouterLink to="/products" class="flex justify-center items-center pt-[4vw]">
             <button
                 class=" px-[1vw]  py-[0.8vw] text-[1vw] rounded-xl text-orange-500 border-2 border-orange-500 font-bold scale-125 hover:scale-150 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
-
 
     </section>
 
@@ -104,6 +109,7 @@ export default {
     <section class="block md:hidden px-[4vw] pt-[8vw] pb-[20vw]">
 
         <h1 class="text-[4vw] font-bold pb-[3vw]">Ultimi prodotti</h1>
+
 
         <!-- Grid Product -->
         <div class="grid grid-cols-1">
@@ -137,7 +143,6 @@ export default {
                 class=" px-[3.5vw]  py-[3vw] rounded-xl text-orange-500 text-[4vw] font-bold border-2 border-orange-500 hover:scale-125 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
-
 
     </section>
 

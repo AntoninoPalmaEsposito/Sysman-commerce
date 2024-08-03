@@ -12,7 +12,6 @@ export default {
                 price: 0,
                 img: ""
             }
-
         }
     },
 
@@ -28,7 +27,12 @@ export default {
         }
     }
 }
+
+
 </script>
+
+
+
 
 
 
@@ -63,7 +67,6 @@ export default {
             prodotto</h1>
 
     </div>
-
 
 
 
@@ -164,7 +167,8 @@ export default {
                 <div class="flex flex-col pb-[2.5vw]">
                     <label for="price" class="w-[30vw] font-bold pb-[1.5vw] text-[4vw]">Prezzo:</label>
                     <input type="number" v-model="product.price" id="price" name="price"
-                        placeholder="Inserisci il prezzo" class="border-2 border-gray-300 p-[1.5vw] rounded-2xl text-[3vw]">
+                        placeholder="Inserisci il prezzo"
+                        class="border-2 border-gray-300 p-[1.5vw] rounded-2xl text-[3vw]">
                 </div>
 
             </div>

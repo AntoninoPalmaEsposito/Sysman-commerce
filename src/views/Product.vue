@@ -28,9 +28,9 @@ export default {
 
         submitForm() {
 
-            if(this.edit) {
+            if (this.edit) {
             } else {
-                this.$router.go(-1)
+               this.$router.go(-1)
             }
 
             this.edit = true
@@ -56,6 +56,8 @@ export default {
 
 <template>
 
+
+
     <!-- goBack DEKSTOP-->
     <div class="hidden md:flex  items-center px-[3vw] py-[2.1vw]">
 
@@ -80,6 +82,7 @@ export default {
     <section class="hidden md:flex justify-center px-[3vw]">
 
 
+
         <!-- img / edit container -->
         <div class="flex flex-col justify-between items-center mr-[5vw]">
 
@@ -88,7 +91,6 @@ export default {
 
             <!-- buttons -->
             <div class="flex scale-90">
-
 
                 <button @click="isEdit"
                     class="hover:scale-125 duration-300 flex justify-center items-center  h-[4vw] w-[4vw] mr-[2vw] rounded-full bg-green-500"><img
@@ -103,18 +105,14 @@ export default {
                     X
                 </button>
 
-
             </div>
 
         </div>
 
 
 
-
-
         <!-- form container -->
         <form @submit.prevent="submitForm">
-
 
 
             <!-- title -->
@@ -140,7 +138,6 @@ export default {
 
             <div class="h-[0.1vw] bg-gray-200 w-[100%] mb-[0.5vw]"></div>
 
-
             <!-- img url -->
             <div class="flex flex-col pb-[3.3vw]">
                 <label for="img" class="w-[6vw] text-[0.9vw] ">Img URL:</label>
@@ -159,7 +156,10 @@ export default {
 
         </form>
 
+
+
     </section>
+
 
 
 
@@ -169,15 +169,16 @@ export default {
     <section class="flex md:hidden flex-col px-[4vw]">
 
 
+
         <!-- img / edit container -->
         <div class="flex flex-col  justify-between items-center pb-[10vw]">
+
 
             <!-- img product -->
             <img :src="product.img" alt="" class="h-[45vw] mb-[7vw] ">
 
             <!-- buttons -->
             <div class="flex justify-center w-full border-t-2 pt-[5vw]">
-
 
                 <button @click="isEdit"
                     class="hover:scale-125 duration-300 flex justify-center items-center  h-[12vw] w-[12vw] mr-[10vw] rounded-[50px] bg-green-500"><img
@@ -192,10 +193,11 @@ export default {
                     X
                 </button>
 
-
             </div>
 
+
         </div>
+
 
 
         <!-- form container MOBILE-->
@@ -225,7 +227,6 @@ export default {
 
             <div class="h-[2px] bg-gray-200 w-[82vw] mb-[2.5vw]"></div>
 
-
             <!-- img url -->
             <div class="flex flex-col pb-[10vw]">
                 <label for="img" class=" text-[3vw] ">IMG URL:</label>
@@ -244,11 +245,9 @@ export default {
 
         </form>
 
+
+
     </section>
-
-
-
-
 
 
 

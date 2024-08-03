@@ -27,8 +27,13 @@ export default {
 
 
 
+
+
+
 <template>
 
+
+    <!-- section container -->
     <section class="px-[4vw] pb-[20vw] md:px-[3vw] md:pb-[10vw]">
 
 
@@ -48,7 +53,6 @@ export default {
 
 
 
-
         <!-- heading container MOBILE -->
         <div class="flex md:hidden  items-center">
 
@@ -64,12 +68,12 @@ export default {
 
 
 
-        <!-- Grid Product DEKSTOP-->
+        <!-- Grid Products DEKSTOP-->
         <div class="hidden md:grid grid-cols-4">
+
 
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products" :key="index"
                 class="flex flex-col  items-center pb-[1.5vw] px-[1.5vw]  border-2 border-gray-200 hover:border-black">
-
 
                 <!-- img -->
                 <div class="h-[15vw] py-[2vw] border-b-[2px] w-[80%] flex justify-center items-center">
@@ -85,8 +89,8 @@ export default {
                 <!-- price -->
                 <p class="w-[100%] text-[0.85vw]"><span class="font-semibold">Prezzo: </span>€{{ product.price }} </p>
 
-
             </RouterLink>
+
 
         </div>
 
@@ -95,9 +99,9 @@ export default {
         <!-- Grid Product MOBILE-->
         <div class="grid md:hidden grid-cols-1">
 
+
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products" :key="index"
                 class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-2 border-gray-200">
-
 
                 <!-- img -->
                 <div class="h-[50vw] border-b-2 w-[70vw] flex justify-center items-center">
@@ -113,13 +117,14 @@ export default {
                 <!-- price -->
                 <p class="w-[100%]"><span class="font-semibold">Prezzo: </span>€{{ product.price }} </p>
 
-
             </RouterLink>
+
 
         </div>
 
 
 
     </section>
+
 
 </template>
