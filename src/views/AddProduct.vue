@@ -37,14 +37,14 @@ export default {
 
 
     <!-- heading container -->
-    <div class="hidden md:flex  items-center px-[60px]">
+    <div class="hidden md:flex  items-center px-[3vw]">
 
         <!-- goBack -->
         <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                class="w-[80px] opacity-70 hover:scale-125 duration-500"></button>
+                class="w-[4vw] hover:scale-125 duration-500"></button>
 
         <!-- title -->
-        <h1 class="text-center text-[30px] text-[rgb(73,73,73)] font-bold mx-auto pr-[80px] py-[60px]">Aggiungi prodotto
+        <h1 class="text-center text-[1.5vw] font-bold mx-auto pr-[4vw] py-[3vw]">Aggiungi prodotto
         </h1>
 
     </div>
@@ -56,10 +56,10 @@ export default {
 
         <!-- goBack -->
         <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
+                class="w-[10vw] hover:scale-125 duration-500"></button>
 
         <!-- title -->
-        <h1 class="text-center text-[5vw] text-[rgb(73,73,73)] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">Aggiungi
+        <h1 class="text-center text-[5vw] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">Aggiungi
             prodotto</h1>
 
     </div>
@@ -68,53 +68,53 @@ export default {
 
 
     <!-- form DEKSTOP -->
-    <section class="hidden md:flex justify-center items-center h-[65vh]">
+    <section class="hidden md:flex justify-center items-center h-[31vw]">
 
         <!-- form -->
         <form @submit.prevent="submitForm" class="">
 
 
             <!-- container -->
-            <div class="border-2 w-[800px] p-[50px] border-gray-400 rounded-3xl">
+            <div class="border-2 w-[40vw] p-[2.6vw] border-gray-400 rounded-3xl">
 
                 <!-- title -->
-                <div class="flex pb-[30px]">
-                    <label for="title" class="w-[140px] font-bold">Titolo:</label>
+                <div class="flex pb-[1.5vw] text-[0.8vw]">
+                    <label for="title" class="w-[7vw] font-bold">Titolo:</label>
                     <textarea cols="60" rows="1" type="text" v-model="product.title" id="title" name="title"
                         placeholder="Inserisci il titolo"
-                        class="border-2 border-gray-300 p-[5px] rounded-2xl"></textarea>
+                        class="border-2 border-gray-300 p-[0.25vw] rounded-2xl"></textarea>
                 </div>
 
                 <!-- description -->
-                <div class="flex pb-[30px]">
-                    <label for="descrizione" class="w-[140px] font-bold">Descrizione:</label>
+                <div class="flex pb-[1.5vw] text-[0.8vw]">
+                    <label for="descrizione" class="w-[7vw] font-bold">Descrizione:</label>
                     <textarea cols="60" rows="6" type="text" v-model="product.description" id="description"
                         name="descrizione" placeholder="Inserisci una descrizione"
-                        class="border-2 border-gray-300 p-[5px] rounded-2xl"></textarea>
+                        class="border-2 border-gray-300 p-[0.25vw] rounded-2xl"></textarea>
                 </div>
 
                 <!-- img url -->
-                <div class="flex pb-[30px]">
-                    <label for="img" class="w-[140px] font-bold">Img URL:</label>
+                <div class="flex pb-[1.5vw] text-[0.8vw]">
+                    <label for="img" class="w-[7vw] font-bold">Img URL:</label>
                     <textarea cols="60" rows="2" type="text" v-model="product.img" id="img" name="img"
                         placeholder="Inserisci url immagine"
-                        class="border-2 border-gray-300 p-[5px] rounded-2xl"></textarea>
+                        class="border-2 border-gray-300 p-[0.25vw] rounded-2xl"></textarea>
                 </div>
 
                 <!-- price -->
-                <div class="flex">
-                    <label for="price" class="w-[140px] font-bold">Prezzo:</label>
+                <div class="flex text-[0.8vw]">
+                    <label for="price" class="w-[7vw] font-bold">Prezzo:</label>
                     <input type="number" v-model="product.price" id="price" name="price"
-                        placeholder="Inserisci il prezzo" class="border-2 border-gray-300 p-[5px] rounded-2xl">
+                        placeholder="Inserisci il prezzo" class="border-2 border-gray-300 p-[0.25vw] rounded-2xl">
                 </div>
 
             </div>
 
 
             <!-- button -->
-            <div class="flex justify-center items-center scale-90 pt-[50px]">
+            <div class="flex justify-center items-center scale-90 pt-[2.5vw]">
                 <button type="submit" value="Invia"
-                    class="bg-blue-400 text-white font-bold text-[25px] hover:scale-125 duration-500 px-[20px] py-[5px] rounded-xl">Salva!</button>
+                    class="text-orange-500 border-2 border-orange-500 font-bold text-[1.3vw] hover:scale-125 duration-500 px-[1vw] py-[0.25vw] rounded-xl">Salva!</button>
             </div>
 
 

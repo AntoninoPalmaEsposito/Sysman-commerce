@@ -6,25 +6,21 @@ export default {
     data() {
         return {
             cart: useProductStore().cart,
-        
-            totalPrice: 0
+            totalPrice: 0,
+            cartCont: 0
         }
     },
 
     mounted() {
-
-
+        this.cartCont = useProductStore().cart.length
         this.totalPrice = this.cart.reduce((accumulatore, productPrice) => accumulatore + productPrice.price, 0)
         console.log(this.totalPrice)
-
-
-
-
     },
 
     methods: {
         removeCart(index) {
             this.cart.splice(index, 1)
+            this.cartCont = useProductStore().cart.length
         },
 
         priceCalculator() {
@@ -55,10 +51,10 @@ export default {
 
             <!-- goBack -->
             <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                    class="w-[80px] opacity-70 hover:scale-125 duration-500"></button>
+                    class="w-[80px] hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[30px] text-[rgb(73,73,73)] font-bold mx-auto pr-[80px] py-[60px]">Carrello</h1>
+            <h1 class="text-center text-[30px] font-bold mx-auto pr-[80px] py-[60px]">Carrello</h1>
 
         </div>
 
@@ -69,10 +65,10 @@ export default {
 
             <!-- goBack -->
             <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                    class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
+                    class="w-[10vw] hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[5vw] text-[rgb(73,73,73)] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">
+            <h1 class="text-center text-[5vw] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">
                 Carrello</h1>
 
         </div>
@@ -88,7 +84,7 @@ export default {
                 <div v-for="(item, index) in cart" :key="item.id">
 
 
-                    <div class="flex items-center border-r-2 border-b-2 border-gray-300  w-[50%]">
+                    <div class="flex items-center border-r-2 border-b-2 border-gray-200  w-[50%]">
 
 
                         <!-- img -->
@@ -128,15 +124,16 @@ export default {
             <!-- total price -->
             <div class="fixed right-[18%] top-[50%]">
 
+                <div class="text-[20px] text-center font-semibold ">Prodotti:  {{ cartCont }}</div>
 
-                <div class="flex pb-[15px]">
-                    <button class="text-[30px] font-bold text-[rgb(73,73,73)] ">Prezzo totale:</button>
-                    <p class="text-[30px] font-semibold pl-[10px] text-[rgb(73,73,73)]">{{ totalPrice }}€</p>
+                <div class="flex pb-[25px]">
+                    <button class="text-[30px] font-bold  ">Prezzo totale:</button>
+                    <p class="text-[30px] font-semibold pl-[10px] ">{{ totalPrice }}€</p>
                 </div>
 
                 <div class="flex justify-center items-center">
                     <button
-                        class="px-[20px] py-[10px] rounded-xl bg-blue-500 text-white font-semibold">Acquista!</button>
+                        class="px-[20px] py-[10px] rounded-xl text-[20px] text-blue-500 border-2 border-blue-500 font-semibold">Acquista!</button>
                 </div>
 
 
@@ -200,16 +197,22 @@ export default {
             </div>
 
 
+          
+                <div class="text-[4vw] font-semibold pt-[3vw]">Prodotti:  {{ cartCont }}</div>
+               
+            
+
+
 
             <!-- total price MOBILE-->
 
             <div class="flex justify-center pb-[5vw] pt-[8vw]">
-                <h2 class="text-[6vw] font-bold text-[rgb(73,73,73)] text-center ">Prezzo totale:</h2>
-                <p class="text-[6vw] font-semibold pl-[2vw] text-[rgb(73,73,73)]">{{ totalPrice }}€</p>
+                <h2 class="text-[6vw] font-bold  text-center ">Prezzo totale:</h2>
+                <p class="text-[6vw] font-semibold pl-[2vw] ">{{ totalPrice }}€ </p>
             </div>
 
             <div class="flex justify-center items-center pb-[20vw]">
-                <button class="text-[5vw] px-[4vw] py-[2vw] rounded-xl bg-blue-500 text-white font-semibold">Acquista!</button>
+                <button class="text-[4vw] px-[3.5vw] py-[3vw] rounded-xl text-blue-500 border-2 border-blue-500 font-bold">Acquista!</button>
             </div>
 
 

@@ -1,7 +1,6 @@
 <script>
 
 export default {
-
     data() {
         return {
 
@@ -26,10 +25,10 @@ export default {
 
     <!-- DEKSTOP -->
     <header
-        class="hidden md:flex h-[80px] text-[rgb(65,65,65)] bg-[rgb(213,234,238)] justify-between items-center px-[60px] shadow-md relative z-10 rounded-b-3xl duration-300">
+        class="hidden md:flex h-[4vw] bg-[rgb(213,234,238)] justify-between items-center px-[3vw] shadow-md relative z-10 rounded-b-3xl duration-300">
 
         <!-- Logo -->
-        <RouterLink to="/" class="text-[35px] text-[rgb(255,122,81)] font-extrabold mt-[-7px]">Sysman-C</RouterLink>
+        <RouterLink to="/" class="text-[1.8vw] text-[rgb(255,122,81)] font-extrabold mt-[-0.4vw]">Sysman-C</RouterLink>
 
 
 
@@ -39,17 +38,17 @@ export default {
 
 
                 <RouterLink to="/products"
-                    class="pr-[30px] text-[18px] font-semibold hover:underline underline-offset-8">
+                    class="pr-[2vw] text-[1vw] font-semibold hover:underline underline-offset-8">
                     Tutti i prodotti
                 </RouterLink>
 
                 <RouterLink to="/AddProduct"
-                    class="pr-[30px] text-[18px] font-semibold hover:underline underline-offset-8">
+                    class="pr-[2vw] text-[1vw] font-semibold hover:underline underline-offset-8">
                     Aggiungi prodotto
                 </RouterLink>
 
-                <RouterLink to="/cart" class="text-[20px] ">
-                    <img src="/src/assets/cart.png" alt="" class="w-[30px] hover:scale-125 duration-500">
+                <RouterLink to="/cart" class="mt-[-0.15vw]">
+                    <img src="/src/assets/cart.png" alt="" class="w-[2vw] hover:scale-125 duration-500">
                 </RouterLink>
 
 
@@ -62,7 +61,7 @@ export default {
 
     <!-- MOBILE -->
     <header
-        class="flex md:hidden h-[13vw] text-[rgb(65,65,65)] bg-[rgb(211,231,235)] justify-between items-center px-[3vw] shadow-md relative z-10 rounded-b-[4vw] duration-300">
+        class="flex md:hidden h-[13vw] bg-[rgb(211,231,235)] justify-between items-center px-[3vw] shadow-md relative z-10 rounded-b-[4vw] duration-300">
 
         <!-- Logo -->
         <RouterLink to="/" class="text-[4.5vw] text-[rgb(255,122,81)] font-extrabold mt-[-1vw]">Sysman-C</RouterLink>
@@ -87,6 +86,7 @@ export default {
                 <RouterLink to="/cart" class=" ">
                     <img src="/src/assets/cart.png" alt="" class="w-[5vw] hover:scale-125 duration-500">
                 </RouterLink>
+
 
 
             </ul>

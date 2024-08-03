@@ -27,7 +27,7 @@ export default {
         },
 
         submitForm() {
-            
+
             if(this.edit) {
             } else {
                 this.$router.go(-1)
@@ -57,10 +57,10 @@ export default {
 <template>
 
     <!-- goBack DEKSTOP-->
-    <div class="hidden md:flex  items-center px-[60px] py-[42px]">
+    <div class="hidden md:flex  items-center px-[3vw] py-[2.1vw]">
 
         <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                class="w-[80px] opacity-70 hover:scale-125 duration-500"></button>
+                class="w-[4vw] hover:scale-125 duration-500"></button>
 
     </div>
 
@@ -70,36 +70,36 @@ export default {
     <div class="flex md:hidden items-center px-[4vw] pt-[8vw]">
 
         <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
+                class="w-[10vw] hover:scale-125 duration-500"></button>
 
     </div>
 
 
 
     <!-- product container DEKSTOP-->
-    <section class="hidden md:flex justify-center px-[60px]">
+    <section class="hidden md:flex justify-center px-[3vw]">
 
 
         <!-- img / edit container -->
-        <div class="flex flex-col justify-between items-center mr-[100px]">
+        <div class="flex flex-col justify-between items-center mr-[5vw]">
 
             <!-- img product -->
-            <img :src="product.img" alt="" class="h-[230px] ">
+            <img :src="product.img" alt="" class="h-[12vw] ">
 
             <!-- buttons -->
-            <div class="flex pt-[80px] scale-90">
+            <div class="flex scale-90">
 
 
                 <button @click="isEdit"
-                    class="hover:scale-125 duration-300 py-[20px] px-[20px] mr-[30px] rounded-[50px] bg-green-500"><img
-                        src="/src/assets/edit.png" alt="" class="w-[30px]"></button>
+                    class="hover:scale-125 duration-300  p-[1vw]  mr-[1.5vw] rounded-full bg-green-500"><img
+                        src="/src/assets/edit.png" alt="" class="w-[1.5vw]"></button>
 
                 <button @click="addToCart(product)"
-                    class="hover:scale-125 duration-300 py-[15px] px-[13px] mr-[30px] rounded-[50px] flex text-[20px] font-bold justify-center items-center bg-orange-400">+<img
+                    class="hover:scale-125 duration-300 py-[0.8vw] px-[0.7vw] mr-[1.5vw] rounded-[50px] flex text-[1vw] font-bold justify-center items-center bg-orange-400">+<img
                         src="/src/assets/cart.png" alt="" class="w-[30px]"></button>
 
                 <button @click="removeProduct()"
-                    class=" hover:scale-125 duration-300 py-[13px] px-[27px] rounded-[50px] font-semibold text-[28px] bg-red-500">
+                    class=" hover:scale-125 duration-300 py-[0.7vw] px-[1.4vw] rounded-[50px] font-semibold text-[1.4vw] bg-red-500">
                     X
                 </button>
 
@@ -116,42 +116,42 @@ export default {
 
 
             <!-- title -->
-            <div class="flex pb-[15px]">
+            <div class="flex pb-[0.8vw]">
                 <textarea cols="60" rows="1" type="text" v-model="product.title" id="title" name="title"
                     placeholder="Inserisci il titolo" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none font-bold"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none font-bold text-[1vw]"></textarea>
             </div>
 
             <!-- description -->
-            <div class="flex pb-[10px]">
-                <textarea cols="60" rows="4" type="text" v-model="product.description" id="description"
+            <div class="flex pb-[0.5vw]">
+                <textarea cols="83" rows="4" type="text" v-model="product.description" id="description"
                     name="descrizione" placeholder="Inserisci la descrizione" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none text-[0.9vw]"></textarea>
             </div>
 
             <!-- price -->
-            <div class="flex pb-[10px] font-semibold">
+            <div class="flex pb-[0.5vw] font-semibold  text-[1vw]">
                 <span>€</span>
                 <input type="number" v-model="product.price" id="price" name="price" placeholder="Inserisci il prezzo"
-                    :disabled="edit" class="appearance-none border-none bg-transparent focus:outline-none">
+                    :disabled="edit" class="appearance-none border-none bg-transparent focus:outline-none  text-[1vw]">
             </div>
 
-            <div class="h-[2px] bg-gray-200 w-[82%] mb-[10px]"></div>
+            <div class="h-[0.1vw] bg-gray-200 w-[100%] mb-[0.5vw]"></div>
 
 
             <!-- img url -->
-            <div class="flex flex-col pb-[65px]">
-                <label for="img" class="w-[120px] text-[15px] ">Img URL:</label>
+            <div class="flex flex-col pb-[3.3vw]">
+                <label for="img" class="w-[6vw] text-[0.9vw] ">Img URL:</label>
                 <textarea cols="60" rows="2" type="text" v-model="product.img" id="img" name="img"
                     placeholder="Inserisci url immagine" :disabled="edit"
-                    class="appearance-none border-none bg-transparent focus:outline-none text-[12px]"></textarea>
+                    class="appearance-none border-none bg-transparent focus:outline-none text-[0.7vw]"></textarea>
             </div>
 
             <!-- button salva -->
-            <div class="flex justify-center items-center scale-90 ml-[-90px]">
+            <div class="flex justify-center items-center scale-90 ml-[-0vw]">
                 <button type="submit" value="Invia"
                     :class="{ 'opacity-40': edit, 'hover:scale-125': !edit, 'duration-300': !edit, 'opacity-100': !edit }"
-                    class="bg-blue-400 text-white font-bold text-[25px] px-[20px] py-[5px] rounded-xl">Salva!</button>
+                    class="text-green-600 border-2 border-green-600 font-bold text-[1.4vw] px-[1vw] py-[0.4vw] rounded-xl">Modifica!</button>
             </div>
 
 
@@ -236,7 +236,7 @@ export default {
             <div class="flex justify-center items-center pb-[20vw]">
                 <button type="submit" value="Invia"
                     :class="{ 'opacity-40': edit, 'hover:scale-125': !edit, 'duration-300': !edit, 'opacity-100': !edit }"
-                    class="text-blue-400 border-2 border-blue-400 font-bold text-[4vw] px-[3.5vw] py-[3vw] rounded-xl">Salva!</button>
+                    class="text-green-600 border-2 border-green-600 font-bold text-[4vw] px-[3.5vw] py-[3vw] rounded-xl">Modifica!</button>
             </div>
 
 

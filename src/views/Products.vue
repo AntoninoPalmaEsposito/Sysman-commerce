@@ -29,7 +29,7 @@ export default {
 
 <template>
 
-    <section class="px-[4vw] pb-[4vw] md:px-[60px] md:pb-[60px]">
+    <section class="px-[4vw] pb-[4vw] md:px-[3vw] md:pb-[3vw]">
 
 
 
@@ -38,10 +38,10 @@ export default {
 
             <!-- goBack -->
             <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                    class="w-[80px] opacity-70 hover:scale-125 duration-500"></button>
+                    class="w-[4vw]  hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[30px] text-[rgb(73,73,73)] font-bold mx-auto pr-[80px] py-[60px]">Tutti i
+            <h1 class="text-center text-[1.5vw]  font-bold mx-auto pr-[4vw] py-[3vw]">Tutti i
                 prodotti</h1>
 
         </div>
@@ -54,10 +54,10 @@ export default {
 
             <!-- goBack -->
             <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                    class="w-[10vw] opacity-70 hover:scale-125 duration-500"></button>
+                    class="w-[10vw] hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[5vw] text-[rgb(73,73,73)] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">Tutti i
+            <h1 class="text-center text-[5vw] font-bold mx-auto pr-[8vw] pb-[10vw] pt-[10vw]">Tutti i
                 prodotti</h1>
 
         </div>
@@ -68,22 +68,22 @@ export default {
         <div class="hidden md:grid grid-cols-4">
 
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products" :key="index"
-                class="flex flex-col  items-center pb-[40px] px-[40px] pt-[20px] border-[1px] border-gray-100 hover:border-black">
+                class="flex flex-col  items-center pb-[1.5vw] px-[1.5vw]  border-2 border-gray-200 hover:border-black">
 
 
                 <!-- img -->
-                <div class="h-[230px] border-b-[2px] w-[80%] flex justify-center items-center">
-                    <img :src="product.img" alt="" class="h-[180px] my-auto">
+                <div class="h-[15vw] py-[2vw] border-b-[2px] w-[80%] flex justify-center items-center">
+                    <img :src="product.img" alt="" class="w-[12vw] my-auto">
                 </div>
 
                 <!-- title -->
-                <h2 class="font-semibold pt-[30px] pb-[10px] text-[16px]">{{ product.title }}</h2>
+                <h2 class="font-semibold pt-[2vw] pb-[10px] text-[0.85vw]">{{ product.title }}</h2>
 
                 <!-- description -->
-                <p class="pb-[10px] text-[13px]">{{ product.description }}</p>
+                <p class="pb-[10px] text-[0.75vw]">{{ product.description }}</p>
 
                 <!-- price -->
-                <p class="w-[100%]"><span class="font-semibold">Prezzo: </span>€{{ product.price }} </p>
+                <p class="w-[100%] text-[0.85vw]"><span class="font-semibold">Prezzo: </span>€{{ product.price }} </p>
 
 
             </RouterLink>
