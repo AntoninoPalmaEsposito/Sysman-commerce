@@ -39,9 +39,9 @@ export default {
 
 
     <!-- Hero section MOBILE -->
-    <div class="flex md:hidden bg-[rgb(211,231,235)] text-black pb-[10vw] flex-col items-center rounded-b-[4vw] mt-[-4vw] px-[4vw]">
+    <div class="flex md:hidden  bg-[rgb(211,231,235)] text-black pb-[10vw] flex-col items-center rounded-b-[4vw] mt-[-4vw] px-[4vw]">
 
-        <h1 class="pt-[12vw] font-bold text-[6vw] text-center leading-[6vw] w-[67vw] ">Potenzia il Tuo PC con i Migliori
+        <h1 class="pt-[12vw] font-bold text-[6vw] text-center leading-[6vw] w-[67vw]  ">Potenzia il Tuo PC con i Migliori
             Componenti Hardware</h1>
 
         <p class="pt-[3vw] text-[3.5vw] text-center ">Benvenuto su Sysman-Commerce, il tuo punto di riferimento per
@@ -63,7 +63,7 @@ export default {
 
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products.slice(0, 3)"
                 :key="index"
-                class="flex flex-col  items-center pb-[60px] px-[40px] pt-[20px] border-[1px] border-gray-100 hover:border-black duration-700">
+                class="flex flex-col  items-center pb-[60px] px-[40px] pt-[20px] border-4 border-black hover:border-black duration-700">
 
                 <div class="h-[260px] border-b-[2px] w-[80%] flex justify-center items-center">
                     <img :src="product.img" alt="" class="h-[200px] my-auto">
@@ -103,7 +103,7 @@ export default {
 
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products.slice(0, 3)"
                 :key="index"
-                class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-[1px] border-gray-100 hover:border-black duration-700">
+                class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-2 border-gray-200">
 
                 <!-- img -->
                 <div class="h-[50vw] border-b-[0.5vw] w-[70vw] flex justify-center items-center">
