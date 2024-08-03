@@ -6,6 +6,7 @@ export default {
     data() {
         return {
             cart: useProductStore().cart,
+        
             totalPrice: 0
         }
     },
@@ -22,8 +23,8 @@ export default {
     },
 
     methods: {
-        removeCart() {
-            useProductStore().deleteCart(this.cart)
+        removeCart(index) {
+            this.cart.splice(index, 1)
         },
 
         priceCalculator() {
@@ -84,7 +85,7 @@ export default {
             <!-- product container -->
             <div class="grid grid-cols-1">
 
-                <div v-for="(item, index) in cart" :key="index">
+                <div v-for="(item, index) in cart" :key="item.id">
 
 
                     <div class="flex items-center border-r-2 border-b-2 border-gray-300  w-[50%]">
@@ -109,7 +110,7 @@ export default {
                             </div>
 
                             <!-- remove button -->
-                            <button @click="removeCart(); priceCalculator()"
+                            <button @click="removeCart(index); priceCalculator()"
                                 class="px-[20px] py-[12px] bg-red-500 rounded-full text-white font-bold text-[18px] mr-[20px] hover:scale-125 duration-500">X</button>
 
 
@@ -151,7 +152,7 @@ export default {
             <!-- product container -->
             <div class="grid grid-cols-1">
 
-                <div v-for="(item, index) in cart" :key="index">
+                <div v-for="(item, index) in cart" :key="item.id">
 
 
                     <div class="flex items-center border-r-2 border-b-2 border-gray-300  ">
@@ -179,7 +180,7 @@ export default {
                                 <!-- remove button -->
                                 <div class="flex justify-end  ">
 
-                                    <button @click="removeCart(); priceCalculator()"
+                                    <button @click="removeCart(index); priceCalculator()"
                                         class="w-[5.2vw]  py-[1vw] bg-red-500 rounded-full text-white font-bold text-[2vw] text-center hover:scale-125 duration-500">X</button>
 
                                 </div>
@@ -200,15 +201,15 @@ export default {
 
 
 
-            <!-- total price -->
+            <!-- total price MOBILE-->
 
-            <div class="flex pb-[15px]">
-                <button class="text-[30px] font-bold text-[rgb(73,73,73)] ">Prezzo totale:</button>
-                <p class="text-[30px] font-semibold pl-[10px] text-[rgb(73,73,73)]">{{ totalPrice }}€</p>
+            <div class="flex justify-center pb-[5vw] pt-[8vw]">
+                <h2 class="text-[6vw] font-bold text-[rgb(73,73,73)] text-center ">Prezzo totale:</h2>
+                <p class="text-[6vw] font-semibold pl-[2vw] text-[rgb(73,73,73)]">{{ totalPrice }}€</p>
             </div>
 
-            <div class="flex justify-center items-center">
-                <button class="px-[20px] py-[10px] rounded-xl bg-blue-500 text-white font-semibold">Acquista!</button>
+            <div class="flex justify-center items-center pb-[20vw]">
+                <button class="text-[5vw] px-[4vw] py-[2vw] rounded-xl bg-blue-500 text-white font-semibold">Acquista!</button>
             </div>
 
 
