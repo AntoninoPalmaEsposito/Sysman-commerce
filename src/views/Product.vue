@@ -91,15 +91,15 @@ export default {
 
 
                 <button @click="isEdit"
-                    class="hover:scale-125 duration-300  p-[1vw]  mr-[1.5vw] rounded-full bg-green-500"><img
-                        src="/src/assets/edit.png" alt="" class="w-[1.5vw]"></button>
+                    class="hover:scale-125 duration-300 flex justify-center items-center  h-[4vw] w-[4vw] mr-[2vw] rounded-full bg-green-500"><img
+                        src="/src/assets/edit.png" alt="" class="w-[2vw]"></button>
 
                 <button @click="addToCart(product)"
-                    class="hover:scale-125 duration-300 py-[0.8vw] px-[0.7vw] mr-[1.5vw] rounded-[50px] flex text-[1vw] font-bold justify-center items-center bg-orange-400">+<img
-                        src="/src/assets/cart.png" alt="" class="w-[30px]"></button>
+                    class="hover:scale-125 duration-300 flex justify-center items-center  h-[4vw] w-[4vw] mr-[2vw] rounded-[50px] text-[1.2vw] font-bold  bg-orange-400">+<img
+                        src="/src/assets/cart.png" alt="" class="w-[1.7vw]"></button>
 
                 <button @click="removeProduct()"
-                    class=" hover:scale-125 duration-300 py-[0.7vw] px-[1.4vw] rounded-[50px] font-semibold text-[1.4vw] bg-red-500">
+                    class=" hover:scale-125 duration-300 flex justify-center items-center  h-[4vw] w-[4vw] rounded-[50px] font-semibold text-[1.5vw] bg-red-500">
                     X
                 </button>
 
@@ -107,6 +107,8 @@ export default {
             </div>
 
         </div>
+
+
 
 
 
@@ -178,15 +180,15 @@ export default {
 
 
                 <button @click="isEdit"
-                    class="hover:scale-125 duration-300 px-[3vw] h-[12vw] mr-[10vw] rounded-[50px] bg-green-500"><img
-                        src="/src/assets/edit.png" alt="" class="w-[5.5vw]"></button>
+                    class="hover:scale-125 duration-300 flex justify-center items-center  h-[12vw] w-[12vw] mr-[10vw] rounded-[50px] bg-green-500"><img
+                        src="/src/assets/edit.png" alt="" class="w-[5vw]"></button>
 
                 <button @click="addToCart(product)"
-                    class="hover:scale-125 duration-300 px-[2vw] h-[12vw] mr-[10vw] rounded-[50px] flex text-[4vw] font-bold justify-center items-center bg-orange-400">+<img
-                        src="/src/assets/cart.png" alt="" class="w-[5.5vw]"></button>
+                    class="hover:scale-125 duration-300 flex justify-center items-center  h-[12vw] w-[12vw] mr-[10vw] rounded-[50px] text-[4vw] font-bold bg-orange-400">+<img
+                        src="/src/assets/cart.png" alt="" class="w-[5vw]"></button>
 
                 <button @click="removeProduct()"
-                    class=" hover:scale-125 duration-300 px-[4.5vw] h-[12vw] rounded-[50px] font-semibold text-[5vw] bg-red-500">
+                    class=" hover:scale-125 duration-300 flex justify-center items-center  h-[12vw] w-[12vw] rounded-[50px] font-semibold text-[4.5vw] bg-red-500">
                     X
                 </button>
 
