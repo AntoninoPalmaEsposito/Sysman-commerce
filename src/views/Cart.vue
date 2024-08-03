@@ -42,7 +42,7 @@ export default {
 
 <template>
 
-    <section class="px-[4vw] md:px-[60px]">
+    <section class="px-[4vw] md:px-[3vw]">
 
 
 
@@ -51,10 +51,10 @@ export default {
 
             <!-- goBack -->
             <button @click="goBack"><img src="/src/assets/arrow.png" alt=""
-                    class="w-[80px] hover:scale-125 duration-500"></button>
+                    class="w-[4vw] hover:scale-125 duration-500"></button>
 
             <!-- title -->
-            <h1 class="text-center text-[30px] font-bold mx-auto pr-[80px] py-[60px]">Carrello</h1>
+            <h1 class="text-center text-[1.5vw] font-bold mx-auto pr-[4vw] py-[3vw]">Carrello</h1>
 
         </div>
 
@@ -76,7 +76,7 @@ export default {
 
 
         <!-- cart container DEKSTOP-->
-        <div v-if="(!this.totalPrice == 0)" class="hidden md:block">
+        <div v-if="(!this.totalPrice == 0)" class="hidden md:block pb-[10vw]">
 
             <!-- product container -->
             <div class="grid grid-cols-1">
@@ -88,26 +88,26 @@ export default {
 
 
                         <!-- img -->
-                        <div class="w-[180px] border-x-[2px] p-[20px] flex justify-center items-center">
-                            <img :src="item.img" alt="" class="h-[100px] my-auto">
+                        <div class="w-[12vw] border-x-2 p-[1vw] flex justify-center items-center">
+                            <img :src="item.img" alt="" class="h-[5vw] my-auto">
                         </div>
 
 
                         <!-- description container -->
-                        <div class="flex justify-between items-center w-[100%] px-[30px]">
+                        <div class="flex justify-between items-center w-[100%] px-[1.5vw]">
 
 
-                            <div class="flex flex-col justify-center">
+                            <div class="flex flex-col justify-center text-[1vw]">
                                 <!-- title -->
-                                <h2 class="font-semibold text-[16px]">{{ item.title }}</h2>
+                                <h2 class="font-semibold text-[1vw] pb-[0.5vw]">{{ item.title }}</h2>
                                 <!-- price -->
-                                <p><span class="font-semibold">Prezzo: </span>{{ item.price }}€ </p>
+                                <p><span class="font-semibold text-[1vw]">Prezzo: </span>{{ item.price }}€ </p>
 
                             </div>
 
                             <!-- remove button -->
                             <button @click="removeCart(index); priceCalculator()"
-                                class="px-[20px] py-[12px] bg-red-500 rounded-full text-white font-bold text-[18px] mr-[20px] hover:scale-125 duration-500">X</button>
+                                class="px-[1vw] py-[0.6vw] bg-red-500 rounded-full text-white font-bold text-[0.9vw] mr-[1vw] hover:scale-125 duration-500">X</button>
 
 
                         </div>
@@ -122,18 +122,18 @@ export default {
 
 
             <!-- total price -->
-            <div class="fixed right-[18%] top-[50%]">
+            <div class="fixed right-[18vw] top-[25vw]">
 
-                <div class="text-[20px] text-center font-semibold ">Prodotti:  {{ cartCont }}</div>
+                <div class="text-[1vw] text-center font-semibold ">Prodotti:  {{ cartCont }}</div>
 
-                <div class="flex pb-[25px]">
-                    <button class="text-[30px] font-bold  ">Prezzo totale:</button>
-                    <p class="text-[30px] font-semibold pl-[10px] ">{{ totalPrice }}€</p>
+                <div class="flex pb-[1.3vw]">
+                    <button class="text-[1.5vw] font-bold  ">Prezzo totale:</button>
+                    <p class="text-[1.5vw] font-semibold pl-[0.5vw] ">{{ totalPrice }}€</p>
                 </div>
 
                 <div class="flex justify-center items-center">
                     <button
-                        class="px-[20px] py-[10px] rounded-xl text-[20px] text-blue-500 border-2 border-blue-500 font-semibold">Acquista!</button>
+                        class="px-[1vw] py-[0.5vw] rounded-xl text-[1vw] text-blue-500 border-2 border-blue-500 font-semibold">Acquista!</button>
                 </div>
 
 
@@ -223,8 +223,8 @@ export default {
 
 
         <!-- cart null DEKSTOP-->
-        <div v-if="(this.totalPrice == 0)" class="h-[40vh] hidden md:flex justify-center items-center">
-            <h1 class="text-[40px] font-bold text-red-500 underline underline-offset-8">Il tuo carrello è vuoto.</h1>
+        <div v-if="(this.totalPrice == 0)" class="h-[20vw] hidden md:flex justify-center items-center">
+            <h1 class="text-[2vw] font-bold text-red-500 underline underline-offset-8">Il tuo carrello è vuoto.</h1>
         </div>
 
 

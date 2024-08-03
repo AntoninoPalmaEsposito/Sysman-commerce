@@ -83,8 +83,8 @@ export default {
                     Aggiungi prodotto
                 </RouterLink>
 
-                <RouterLink to="/cart" class=" ">
-                    <img src="/src/assets/cart.png" alt="" class="w-[5vw] hover:scale-125 duration-500">
+                <RouterLink to="/cart" class="pr-[0.5vw] ">
+                    <img src="/src/assets/cart.png" alt="" class="w-[6vw] hover:scale-125 duration-500">
                 </RouterLink>
 
 

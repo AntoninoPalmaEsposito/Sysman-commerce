@@ -29,7 +29,7 @@ export default {
 
 <template>
 
-    <section class="px-[4vw] pb-[4vw] md:px-[3vw] md:pb-[3vw]">
+    <section class="px-[4vw] pb-[20vw] md:px-[3vw] md:pb-[10vw]">
 
 
 

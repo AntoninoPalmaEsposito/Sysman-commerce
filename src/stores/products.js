@@ -16,7 +16,7 @@ export const useProductStore = defineStore('products', {
       {
         "title": "MSI GeForce RTX 4060 VENTUS 2X Black 8G OC",
         "description": "Scheda video con GPU NVIDIA GeForce RTX 4060, 8 GB di memoria GDDR6, supporto per ray tracing e DLSS, design compatto e doppia ventola per un raffreddamento efficiente.",
-        "price": 306.5,
+        "price": 306,
         "img": "https://asset.msi.com/resize/image/global/product/product_1691553350a0917e4c56fe0c1d2661fccf68071151.png62405b38c58fe0f07fcef2367d8a9ba1/600.png"
       },
 

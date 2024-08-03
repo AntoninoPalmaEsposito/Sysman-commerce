@@ -57,7 +57,7 @@ export default {
 
 
     <!-- last product DEKSTOP -->
-    <section class="hidden md:block px-[3vw] py-[5vw]">
+    <section class="hidden md:block px-[3vw] pt-[5vw] pb-[10vw]">
 
         <h1 class="text-[1.8vw] font-bold pb-[1.8vw]">Ultimi prodotti</h1>
 
