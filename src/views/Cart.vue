@@ -155,11 +155,11 @@ export default {
                 <div v-for="(item, index) in cart" :key="item.id">
 
 
-                    <div class="flex items-center border-r-2 border-b-2 border-gray-300  ">
+                    <div class="flex items-center border-r-2 border-b-2 border-gray-200  ">
 
 
                         <!-- img -->
-                        <div class="w-[40vw] border-x-[2px] p-[3vw] flex justify-center items-center">
+                        <div class="w-[40vw] border-x-2 p-[3vw] flex justify-center items-center">
                             <img :src="item.img" alt="" class="h-[14vw] my-auto">
                         </div>
 

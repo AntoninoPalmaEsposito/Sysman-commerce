@@ -106,7 +106,7 @@ export default {
                 class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-2 border-gray-200">
 
                 <!-- img -->
-                <div class="h-[50vw] border-b-[0.5vw] w-[70vw] flex justify-center items-center">
+                <div class="h-[50vw] border-b-2 w-[70vw] flex justify-center items-center">
                     <img :src="product.img" alt="" class="h-[40vw] my-auto">
                 </div>
 
@@ -136,7 +136,7 @@ export default {
         <!-- Button tutti i prodotti MOBILE-->
         <RouterLink to="/products" class="flex md:hidden justify-center items-center pt-[10vw]">
             <button
-                class=" px-[3.5vw]  py-[3vw] rounded-xl text-white text-[4vw] font-bold bg-blue-500 hover:scale-125 duration-300">Tutti
+                class=" px-[3.5vw]  py-[3vw] rounded-xl text-orange-500 text-[4vw] font-bold border-2 border-orange-500 hover:scale-125 duration-300">Tutti
                 i prodotti</button>
         </RouterLink>
 

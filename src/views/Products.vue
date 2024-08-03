@@ -96,11 +96,11 @@ export default {
         <div class="grid md:hidden grid-cols-1">
 
             <RouterLink :to="{ path: '/product/' + index }" v-for="(product, index) in products" :key="index"
-                class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-[1px] border-gray-100 hover:border-black duration-700">
+                class="flex flex-col  items-center pb-[8vw] px-[6vw] pt-[2vw] border-2 border-gray-200">
 
 
                 <!-- img -->
-                <div class="h-[50vw] border-b-[0.5vw] w-[70vw] flex justify-center items-center">
+                <div class="h-[50vw] border-b-2 w-[70vw] flex justify-center items-center">
                     <img :src="product.img" alt="" class="h-[40vw] my-auto">
                 </div>
 

@@ -173,7 +173,7 @@ export default {
             <!-- button -->
             <div class="flex justify-center items-center pt-[8vw]">
                 <button type="submit" value="Invia"
-                    class="bg-blue-400 text-white font-bold text-[5.5vw] hover:scale-125 duration-500 px-[4vw] py-[1vw] rounded-xl">Salva!</button>
+                    class="text-orange-500 border-2 border-orange-500 font-bold text-[4vw] hover:scale-125 duration-500 px-[3.5vw] py-[3vw] rounded-xl">Salva!</button>
             </div>
 
 
